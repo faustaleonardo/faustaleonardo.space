@@ -1,4 +1,2 @@
-// TODO: updated later
-const constants = () => {};
-
-export default constants;
+export const DARK = 'dark';
+export const LIGHT = 'light';
