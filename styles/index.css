@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --primary: #045de9;
+  --secondary: #09c6f9;
+}
+
 html,
 body {
   padding: 0;
@@ -17,4 +22,16 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.text-gradient {
+  font-family: 'Dancing Script', cursive;
+  background-color: var(--primary);
+  background-image: linear-gradient(
+    315deg,
+    var(--primary) 0%,
+    var(--secondary) 74%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
