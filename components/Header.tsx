@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import useIsMounted from '../hooks/useIsMounted';
 import CloseButton from './CloseButton';
 import HamburgerButton from './HamburgerButton';
 import NavbarMobile from './Navbar/Mobile';
@@ -9,7 +8,6 @@ import Logo from './Logo';
 
 const Header = () => {
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
-  const { isMounted } = useIsMounted();
 
   const handleOpenMobileMenu = () => {
     setIsMobileMenuOpened(true);
@@ -17,8 +15,6 @@ const Header = () => {
   const handleCloseMobileMenu = () => {
     setIsMobileMenuOpened(false);
   };
-
-  if (!isMounted) return null;
 
   return (
     <header>

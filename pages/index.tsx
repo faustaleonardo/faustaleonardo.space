@@ -1,7 +1,7 @@
 import type { GetStaticProps, NextPage } from 'next';
-import Head from 'next/head';
-import Header from '../components/Header';
+import Layout from '../components/Layout';
 import { getData } from './api';
+import useIsMounted from '../hooks/useIsMounted';
 
 // TODO: remove later
 type Props = {
@@ -9,10 +9,14 @@ type Props = {
 };
 
 const Home: NextPage<Props> = (props) => {
+  const { isMounted } = useIsMounted();
+
+  if (!isMounted) return null;
+
   return (
-    <>
-      <Header />
-    </>
+    <Layout>
+      <h1>Hello World</h1>
+    </Layout>
   );
 };
 export default Home;
