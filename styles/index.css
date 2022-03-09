@@ -24,14 +24,21 @@ a {
   box-sizing: border-box;
 }
 
-.text-gradient {
-  font-family: 'Dancing Script', cursive;
+.gradient {
   background-color: var(--primary);
   background-image: linear-gradient(
     315deg,
     var(--primary) 0%,
     var(--secondary) 74%
   );
+}
+
+.gradient:hover {
+  background-color: white;
+}
+
+.text-gradient {
+  font-family: 'Dancing Script', cursive;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -1,37 +1,43 @@
-import useTheme from '../hooks/useTheme';
-import { DARK, LIGHT } from '../lib/constants';
-import HamburgerIcon from './icons/HamburgerIcon';
-import MoonIcon from './icons/MoonIcon';
-import SunIcon from './icons/SunIcon';
+import { useState } from 'react';
+import useIsMounted from '../hooks/useIsMounted';
+import CloseButton from './CloseButton';
+import HamburgerButton from './HamburgerButton';
+import NavbarMobile from './Navbar/Mobile';
+import NavbarDesktop from './Navbar/Desktop';
+import ThemeButton from './ThemeButton';
+import Logo from './Logo';
 
 const Header = () => {
-  const { theme, setTheme, isMounted } = useTheme();
-  const isLight = theme === LIGHT;
-  const themePosition = isLight ? 'justify-end' : 'justify-start';
+  const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);
+  const { isMounted } = useIsMounted();
 
-  const handleToggleTheme = () => {
-    const nextTheme = theme === LIGHT ? DARK : LIGHT;
-    setTheme(nextTheme);
+  const handleOpenMobileMenu = () => {
+    setIsMobileMenuOpened(true);
+  };
+  const handleCloseMobileMenu = () => {
+    setIsMobileMenuOpened(false);
   };
 
   if (!isMounted) return null;
 
   return (
-    <header className="flex items-center justify-between py-6 px-8">
-      <h1 className="text-gradient text-4xl">Fausta</h1>
+    <header>
+      {!isMobileMenuOpened ? (
+        <div className="flex items-center justify-between py-6 px-8">
+          <Logo />
 
-      <div className="flex">
-        <button
-          className={`flex items-center w-10 border border-zinc-500 rounded-full ${themePosition}`}
-          onClick={handleToggleTheme}
-        >
-          <div className="p-1">{isLight ? <SunIcon /> : <MoonIcon />}</div>
-        </button>
-
-        <div className="ml-2">
-          <HamburgerIcon />
+          <div className="flex items-center">
+            <NavbarDesktop />
+            <ThemeButton />
+            <HamburgerButton onOpenMobileMenu={handleOpenMobileMenu} />
+          </div>
         </div>
-      </div>
+      ) : (
+        <div className="md:hidden w-screen h-screen flex items-center justify-center">
+          <CloseButton onCloseMobileMenu={handleCloseMobileMenu} />
+          <NavbarMobile />
+        </div>
+      )}
     </header>
   );
 };
