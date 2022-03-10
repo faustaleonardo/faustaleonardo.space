@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import CloseButton from './CloseButton';
-import HamburgerButton from './HamburgerButton';
+import CloseButton from './Button/Close';
 import NavbarMobile from './Navbar/Mobile';
 import NavbarDesktop from './Navbar/Desktop';
-import ThemeButton from './ThemeButton';
 import Logo from './Logo';
+import ThemeButton from './Button/Theme';
+import HamburgerButton from './Button/Hamburger';
 
 const Header = () => {
   const [isMobileMenuOpened, setIsMobileMenuOpened] = useState(false);

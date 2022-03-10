@@ -1,8 +1,7 @@
 import { useTheme } from 'next-themes';
-import useIsMounted from '../hooks/useIsMounted';
-import { DARK, LIGHT } from '../lib/constants';
-import MoonIcon from './icons/MoonIcon';
-import SunIcon from './icons/SunIcon';
+import { DARK, LIGHT } from '../../lib/constants';
+import MoonIcon from '../Icon/Moon';
+import SunIcon from '../Icon/Sun';
 
 const ThemeButton = () => {
   const { theme, setTheme } = useTheme();

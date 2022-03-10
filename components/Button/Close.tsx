@@ -1,4 +1,4 @@
-import CloseIcon from './icons/CloseIcon';
+import CloseIcon from '../Icon/Close';
 
 type Props = {
   onCloseMobileMenu: () => void;
@@ -7,7 +7,7 @@ type Props = {
 const CloseButton: React.FC<Props> = ({ onCloseMobileMenu }) => {
   return (
     <button
-      className="w-12 h-12 flex justify-center items-center rounded-full bg-sky-500 hover:bg-white transition-all absolute top-10 right-20 drop-shadow-lg"
+      className="group w-12 h-12 flex justify-center items-center rounded-full bg-sky-500 hover:bg-white transition-all absolute top-10 right-20 drop-shadow-lg"
       onClick={onCloseMobileMenu}
     >
       <CloseIcon />
