@@ -1,3 +1,4 @@
+import Container from './Container';
 import Footer from './Footer';
 import Header from './Header';
 import Meta from './Meta';
@@ -7,8 +8,10 @@ const Layout: React.FC = ({ children }) => {
     <>
       <Meta />
       <Header />
-      <main>{children}</main>
-      <Footer />
+      <Container>
+        <main>{children}</main>
+        <Footer />
+      </Container>
     </>
   );
 };

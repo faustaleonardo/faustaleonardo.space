@@ -5,13 +5,12 @@ import { getTitleCase } from '../lib/utils';
 import EmailIcon from './Icon/Email';
 import GithubIcon from './Icon/Github';
 import HashNodeIcon from './Icon/Hashnode';
-import HashNode from './Icon/Hashnode';
 import LinkedinIcon from './Icon/Linkedin';
 import TwitterIcon from './Icon/Twitter';
 
 const Footer = () => {
   return (
-    <footer className="mx-8 xl:mx-32 lg:flex lg:justify-between lg:items-start lg:my-12">
+    <footer className="lg:flex lg:justify-between lg:items-start lg:my-12">
       <nav>
         <ul className="flex gap-4 py-8 lg:flex-col lg:py-0">
           {MENUS.map(({ name, path }) => (
