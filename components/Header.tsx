@@ -19,10 +19,10 @@ const Header = () => {
   return (
     <header>
       {!isMobileMenuOpened ? (
-        <div className="flex items-center justify-between py-6 px-8">
+        <div className="flex items-center justify-between py-6 mx-8">
           <Logo />
 
-          <div className="flex items-center">
+          <div className="flex gap-4 items-center">
             <NavbarDesktop />
             <ThemeButton />
             <HamburgerButton onOpenMobileMenu={handleOpenMobileMenu} />

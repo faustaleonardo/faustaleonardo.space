@@ -4,7 +4,7 @@ const Logo = () => {
   return (
     <Link href="/">
       <a>
-        <h1 className="gradient text-gradient text-4xl">Fausta</h1>
+        <h1 className="gradient text-gradient text-5xl">FL</h1>
       </a>
     </Link>
   );

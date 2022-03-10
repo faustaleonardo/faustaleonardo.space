@@ -1,4 +1,3 @@
-// types
 type SITE_METADATA_PROPS = {
   title: string;
   url: string;
@@ -14,7 +13,14 @@ type MENUS_PROPS = {
   path: string;
 };
 
-// values
+type SOCIAL_MEDIA_LINK_PROPS = {
+  linkedin: string;
+  twitter: string;
+  github: string;
+  hashNode: string;
+  email: string;
+};
+
 export const DARK = 'dark';
 export const LIGHT = 'light';
 
@@ -38,4 +44,12 @@ export const SITE_METADATA: SITE_METADATA_PROPS = {
   type: 'article',
   imageUrl: 'https://faustaleonardo.space/meta/meta.png',
   twitterUsername: '@faustaleonardo',
+};
+
+export const SOCIAL_MEDIA_LINK: SOCIAL_MEDIA_LINK_PROPS = {
+  linkedin: 'https://www.linkedin.com/in/faustaleonardo/',
+  twitter: 'https://twitter.com/faustaleonardo',
+  github: 'https://github.com/faustaleonardo',
+  hashNode: 'https://hashnode.com/@faustaleonardo',
+  email: 'mailto:faustaleonardo11@gmail.com',
 };

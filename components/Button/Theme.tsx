@@ -14,7 +14,7 @@ const ThemeButton = () => {
   };
 
   return (
-    <div className="md:w-24 md:flex md:justify-center">
+    <div className="md:flex md:justify-end">
       <button
         className={`flex items-center w-10 border border-zinc-500 rounded-full transition-all ${themePosition}`}
         onClick={handleToggleTheme}
