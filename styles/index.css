@@ -24,6 +24,10 @@ a {
   box-sizing: border-box;
 }
 
+.custom-list-type {
+  list-style-type: '→';
+}
+
 .gradient {
   background-color: var(--primary);
   background-image: linear-gradient(
@@ -41,4 +45,59 @@ a {
   font-family: 'Dancing Script', cursive;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.gradient-background {
+  background: linear-gradient(45deg, #045de9, #09c6f9);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 14s ease infinite;
+  -moz-animation: AnimationName 14s ease infinite;
+  -o-animation: AnimationName 14s ease infinite;
+  animation: AnimationName 14s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 99% 0%;
+  }
+  50% {
+    background-position: 2% 100%;
+  }
+  100% {
+    background-position: 99% 0%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 99% 0%;
+  }
+  50% {
+    background-position: 2% 100%;
+  }
+  100% {
+    background-position: 99% 0%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 99% 0%;
+  }
+  50% {
+    background-position: 2% 100%;
+  }
+  100% {
+    background-position: 99% 0%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 99% 0%;
+  }
+  50% {
+    background-position: 2% 100%;
+  }
+  100% {
+    background-position: 99% 0%;
+  }
 }

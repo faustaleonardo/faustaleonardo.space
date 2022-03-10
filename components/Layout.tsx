@@ -8,8 +8,10 @@ const Layout: React.FC = ({ children }) => {
     <>
       <Meta />
       <Header />
+      {/* TODO: later */}
+      <main>{children}</main>
+
       <Container>
-        <main>{children}</main>
         <Footer />
       </Container>
     </>

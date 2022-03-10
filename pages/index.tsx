@@ -2,6 +2,8 @@ import type { GetStaticProps, NextPage } from 'next';
 import Layout from '../components/Layout';
 import { getData } from './api';
 import useIsMounted from '../hooks/useIsMounted';
+import Hero from '../components/Hero';
+import GradientBackground from '../components/GradientBackground';
 
 // TODO: remove later
 type Props = {
@@ -14,9 +16,11 @@ const Home: NextPage<Props> = (props) => {
   if (!isMounted) return null;
 
   return (
-    <Layout>
-      <h1>Hello World</h1>
-    </Layout>
+    <>
+      <Layout>
+        <Hero />
+      </Layout>
+    </>
   );
 };
 export default Home;
