@@ -3,11 +3,15 @@ import Footer from './Footer';
 import Header from './Header';
 import Meta from './Meta';
 
-const Layout: React.FC = ({ children }) => {
+type LayoutProps = {
+  onOpenMobileMenu: () => void;
+};
+
+const Layout: React.FC<LayoutProps> = ({ children, onOpenMobileMenu }) => {
   return (
     <>
       <Meta />
-      <Header />
+      <Header onOpenMobileMenu={onOpenMobileMenu} />
       {/* TODO: later */}
       <main>{children}</main>
 

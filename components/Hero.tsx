@@ -28,7 +28,12 @@ const Hero = () => {
 
         <div className="flex flex-wrap gap-3">
           {TECH_STACK.map(({ name, color, link }) => (
-            <a key={link} className={`block px-3 bg-[${color}]`} href={link}>
+            <a
+              key={link}
+              className={`block px-3 bg-[${color}]`}
+              href={link}
+              target="_blank"
+            >
               <span className="text-white drop-shadow-lg">{name}</span>
             </a>
           ))}
