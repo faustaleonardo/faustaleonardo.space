@@ -28,6 +28,43 @@ a {
   list-style-type: '✨';
 }
 
+.custom-link {
+  background-image: linear-gradient(
+    to right,
+    #045de9,
+    #045de9 50%,
+    #09c6f9 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-link:before {
+  content: '';
+  background: #045de9;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.custom-link:hover {
+  background-position: 0;
+}
+
+.custom-link:hover::before {
+  width: 100%;
+}
+
 /* TODO: */
 .gradient {
   background-color: var(--primary);

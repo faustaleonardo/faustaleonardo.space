@@ -16,9 +16,7 @@ const Footer = () => {
           {MENUS.map(({ name, path }) => (
             <li key={name}>
               <Link href={path}>
-                <a className="text-base text-gray-500 dark:text-gray-300 dark:hover:text-gray-100 hover:text-black hover:underline">
-                  {getTitleCase(name)}
-                </a>
+                <a className="text-base custom-link">{getTitleCase(name)}</a>
               </Link>
             </li>
           ))}

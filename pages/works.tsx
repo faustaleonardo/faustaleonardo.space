@@ -26,29 +26,27 @@ const Works: NextPage = () => {
               Some things I&apos;ve built
             </h1>
 
-            <div>
-              <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
-                {THUMBNAILS.map(({ link, imageUrl, name }) => (
-                  <a
-                    href={link}
-                    key={name}
-                    className="w-full block shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
-                  >
-                    <div className="relative overflow-hidden group">
-                      <img
-                        src={imageUrl}
-                        alt={name}
-                        className="transform group-hover:scale-125 hover:opacity-25 transition duration-300 ease-out"
-                      />
-                      <div className="hidden group-hover:block transition duration-300 ease-in absolute inset-x-1/4 inset-y-1/2">
-                        <h3 className="text-base text-gray-600 dark:text-gray-300 text-center font-bold text-xl uppercase tracking-widest border border-1 p-1 rounded border-sky-500">
-                          {name}
-                        </h3>
-                      </div>
+            <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 py-20 pb-40">
+              {THUMBNAILS.map(({ link, imageUrl, name }) => (
+                <a
+                  href={link}
+                  key={name}
+                  className="w-full block shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+                >
+                  <div className="relative overflow-hidden group">
+                    <img
+                      src={imageUrl}
+                      alt={name}
+                      className="transform group-hover:scale-125 hover:opacity-25 transition duration-300 ease-out"
+                    />
+                    <div className="hidden group-hover:block transition duration-300 ease-in absolute inset-x-1/4 inset-y-1/2">
+                      <h3 className="text-base text-gray-600 dark:text-gray-300 text-center font-bold text-xl uppercase tracking-widest border border-1 p-1 rounded border-sky-500">
+                        {name}
+                      </h3>
                     </div>
-                  </a>
-                ))}
-              </div>
+                  </div>
+                </a>
+              ))}
             </div>
           </Container>
         </div>

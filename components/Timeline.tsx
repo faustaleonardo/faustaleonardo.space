@@ -11,11 +11,11 @@ const Timeline = () => {
           <>
             <div key={item.company}>
               <h3 className="text-xl">
-                <span>{item.position}</span>
+                <span>{item.position} </span>
                 <a
                   href={item.companyUrl}
                   target="_blank"
-                  className="text-base text-sky-600 dark:text-sky-300 hover:underline"
+                  className="text-base custom-link"
                 >
                   {` @${item.company}`}
                 </a>
