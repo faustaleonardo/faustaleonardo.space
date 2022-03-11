@@ -3,12 +3,10 @@ import Layout from '../components/Layout';
 import { getData } from './api';
 import useIsMounted from '../hooks/useIsMounted';
 import Hero from '../components/Hero';
-import GradientBackground from '../components/GradientBackground';
-import CloseButton from '../components/Button/Close';
-import NavbarMobile from '../components/Navbar/Mobile';
-import { useState } from 'react';
 import useIsMobileMenuOpened from '../hooks/useIsMobileMenuOpened';
 import MobileMenu from '../components/MobileMenu';
+import Timeline from '../components/Timeline';
+import Container from '../components/Container';
 
 // TODO: remove later
 type Props = {
@@ -26,7 +24,10 @@ const Home: NextPage<Props> = (props) => {
     <MobileMenu onCloseMobileMenu={handleCloseMobileMenu} />
   ) : (
     <Layout onOpenMobileMenu={handleOpenMobileMenu}>
-      <Hero />
+      <Container>
+        <Hero />
+      </Container>
+      <Timeline />
     </Layout>
   );
 };

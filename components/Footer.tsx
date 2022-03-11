@@ -25,7 +25,7 @@ const Footer = () => {
         </ul>
       </nav>
 
-      <div className="lg:hidden border border-gray-200 dark:border-gray-800"></div>
+      <div className="lg:hidden border border-gray-200 dark:border-gray-800" />
 
       <section className="py-6 lg:py-0">
         <h2 className="text-gray-500 dark:text-gray-400 text-sm lg:text-base lg:text-right">

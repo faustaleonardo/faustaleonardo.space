@@ -1,13 +1,48 @@
 import {
+  CAREER_TYPE,
   MENUS_TYPE,
   SITE_META_TYPE,
   SOCIAL_MEDIA_TYPE,
-  TECH_STACK_TYPE,
+  THUMBNAILS_TYPE,
 } from './types';
 
 export const DARK = 'dark';
 export const LIGHT = 'light';
+
+export const REACT = 'React';
+export const REACT_URL = 'https://reactjs.org/';
+export const REACT_NATIVE = 'React Native';
+export const REACT_NATIVE_URL = 'https://reactnative.dev/';
+export const GRAPHQL = 'GraphQL';
+export const GRAPHQL_URL = 'https://graphql.org/';
+export const EXPRESS_JS = 'Express.js';
+export const EXPRESS_JS_URL = 'https://expressjs.com/';
+export const NEXT_JS = 'Next.js';
+export const NEXT_JS_URL = 'https://nextjs.org/';
+export const NODE_JS = 'Node.js';
+export const NODE_JS_URL = 'https://nodejs.org/';
+export const JEST = 'Jest';
+export const JEST_URL = 'https://jestjs.io/';
+export const JAVASCRIPT = 'Javascript';
+export const JAVASCRIPT_URL =
+  'https://developer.mozilla.org/en-US/docs/Web/JavaScript';
+export const TYPESCRIPT = 'Typescript';
+export const TYPESCRIPT_URL = 'https://www.typescriptlang.org/';
+export const HTML5 = 'HTML5';
+export const HTML5_URL = 'https://www.w3.org/html/';
+export const CSS3 = 'CSS3';
+export const CSS3_URL = 'https://www.w3schools.com/css/';
+export const WEBPACK = 'Webpack';
+export const WEBPACK_URL = 'https://webpack.js.org/';
+export const DOCKER = 'Docker';
+export const DOCKER_URL = 'https://www.docker.com/';
+export const KUBERNETES = 'Kubernetes';
+export const KUBERNETES_URL = 'https://kubernetes.io/';
+export const BABEL = 'Babel';
+export const BABEL_URL = 'https://babeljs.io/';
+
 export const SAYURBOX_URL = 'https://www.sayurbox.com';
+// TODO:
 export const TECH_STACK_BASE_URL = 'https://img.shields.io';
 
 export const MENUS: Array<MENUS_TYPE> = [
@@ -40,80 +75,88 @@ export const SOCIAL_MEDIA_LINK: SOCIAL_MEDIA_TYPE = {
   email: 'mailto:faustaleonardo11@gmail.com',
 };
 
-export const TECH_STACK: TECH_STACK_TYPE[] = [
+export const TIMELINE: CAREER_TYPE[] = [
   {
-    name: 'React',
-    link: 'https://reactjs.org/',
-    color: '#7cc5d9',
+    position: 'SDE Frontend',
+    company: 'Sayurbox',
+    companyUrl: SAYURBOX_URL,
+    period: 'Jul 2021 - Mar 2022',
+    description: [
+      'Developed, monitored and provided stabilization support for referral (sayurfluencer) and affiliate program (sayurfluencer plus). Key result: acquiring 1K new customers on first month release, with growth 20%.',
+      'One of the main contributors in refactoring team. Refactored features, such as: category page, search page, referral, affiliate, loyalty points, PDP, event tracking and optimized list rendering.',
+      'Reviewed code to validate structures, and verify browser, device and operating system compatibility.',
+      'Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources.',
+      'Conducted live coding interviews for SDE level 1 to 3 and interns.',
+      'Mentored interns to be successful in their professional development.',
+    ],
+    techStacks: 'React, React Native, Javascript, Typescript, GraphQL',
   },
   {
-    name: 'React Native',
-    link: 'https://reactnative.dev/',
-    color: '#7cc5d9',
+    position: 'Software Engineer',
+    company: 'Payfazz',
+    companyUrl: 'https://www.payfazz.com/',
+    period: 'Feb 2021 - Jul 2021',
+    description: [
+      ' Completed redesigns of existing web pages to improve performance and enhance visuals.',
+      'Conceived and built optimized landing pages in HTML and CSS.',
+      'Employed coding practices based on commonly accepted standards to establish site layout and user interface.',
+      'Improved and maintained codebase quality.',
+      'Analysed system specifications and translated system requirements to task specifications.',
+    ],
+    techStacks: 'React, Javascript, Go, PostgreSQL',
   },
   {
-    name: 'GraphQL',
-    link: 'https://graphql.org/',
-    color: '#d64292',
+    position: 'Work and Holiday Maker',
+    company: 'Australia',
+    companyUrl: 'https://www.australia.com/',
+    period: 'Dec 2017 - Jan 2020',
+    description: ['Studied, lived and worked in Australia'],
+    techStacks: 'React, Javascript, Go, PostgreSQL',
   },
   {
-    name: 'Expressjs',
-    link: 'https://expressjs.com/',
-    color: '#444',
+    position: 'Web Developer',
+    company: 'Freelance',
+    companyUrl: 'https://freelancer.com/',
+    period: 'Sep 2016 - Nov 2017',
+    description: [
+      'Converted mockups into HTML, JavaScript, AJAX, and JSON.',
+      'Created responsive website layouts and user interface using HTML and CSS best practices.',
+      'Designed site to be compatible with top browsers, including Firefox, Chrome, and Safari.',
+      'Established web hosting for site and uploaded site files to the hosting account.',
+    ],
+    techStacks: 'Tech stacks: HTML, CSS, Javascript, Bootstrap',
+  },
+];
+
+export const THUMBNAILS: THUMBNAILS_TYPE[] = [
+  {
+    name: 'sayurfluencer - referral program',
+    link: '#',
+    imageUrl: '/thumbnails/sayurfluencer.png',
   },
   {
-    name: 'Nextjs',
-    link: 'https://nextjs.org/',
-    color: '#696969',
+    name: 'solvin - education app',
+    link: 'https://faustaleonardo.bitbucket.io/frontend-solvin/',
+    imageUrl: '/thumbnails/solvin.png',
   },
   {
-    name: 'Nodejs',
-    link: 'https://nodejs.org/',
-    color: '#84ba64',
+    name: 'solivis - restaurant reservation app',
+    link: '#',
+    imageUrl: '/thumbnails/solivis.png',
   },
   {
-    name: 'Jest',
-    link: 'https://jestjs.io/',
-    color: '#c21325',
+    name: 'medanstore - ecommerce app',
+    link: 'https://github.com/faustaleonardo/medanstore-microservices/',
+    imageUrl: '/thumbnails/medanstore.png',
   },
   {
-    name: 'Javascript',
-    link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-    color: '#f5da55',
+    name: 'medanhost - accommodation app',
+    link: 'https://github.com/faustaleonardo/medanhost/',
+    imageUrl: '/thumbnails/medanhost.png',
   },
   {
-    name: 'Typescript',
-    link: 'https://www.typescriptlang.org/',
-    color: '#3178c6',
-  },
-  {
-    name: 'HTML5',
-    link: 'https://www.w3.org/html/',
-    color: '#FF5733',
-  },
-  {
-    name: 'CSS3',
-    link: 'https://www.w3schools.com/css/',
-    color: '#264de4',
-  },
-  {
-    name: 'Webpack',
-    link: 'https://webpack.js.org/',
-    color: '#2b3a42',
-  },
-  {
-    name: 'Docker',
-    link: 'https://www.docker.com/',
-    color: '#2496ed',
-  },
-  {
-    name: 'Kubernetes',
-    link: 'https://kubernetes.io/',
-    color: '#3371e3',
-  },
-  {
-    name: 'Babel',
-    link: 'https://babeljs.io/',
-    color: '#f5da55',
+    name: 'forumzone - forum api',
+    link: 'https://documenter.getpostman.com/view/361363/SzKWtx8U?version=latest/',
+    imageUrl: '/thumbnails/forumzone.png',
   },
 ];

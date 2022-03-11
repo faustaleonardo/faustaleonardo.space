@@ -25,9 +25,10 @@ a {
 }
 
 .custom-list-type {
-  list-style-type: '→';
+  list-style-type: '✨';
 }
 
+/* TODO: */
 .gradient {
   background-color: var(--primary);
   background-image: linear-gradient(

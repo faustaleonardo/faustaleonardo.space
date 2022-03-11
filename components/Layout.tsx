@@ -12,9 +12,7 @@ const Layout: React.FC<LayoutProps> = ({ children, onOpenMobileMenu }) => {
     <>
       <Meta />
       <Header onOpenMobileMenu={onOpenMobileMenu} />
-      {/* TODO: later */}
       <main>{children}</main>
-
       <Container>
         <Footer />
       </Container>

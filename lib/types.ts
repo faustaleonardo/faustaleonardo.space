@@ -21,8 +21,17 @@ export type SOCIAL_MEDIA_TYPE = {
   email: string;
 };
 
-export type TECH_STACK_TYPE = {
+export type CAREER_TYPE = {
+  position: string;
+  company: string;
+  companyUrl: string;
+  period: string;
+  description: string[];
+  techStacks: string;
+};
+
+export type THUMBNAILS_TYPE = {
   name: string;
   link: string;
-  color: string;
+  imageUrl: string;
 };
