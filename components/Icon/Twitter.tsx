@@ -5,7 +5,7 @@ const TwitterIcon = () => {
       fill="currentColor"
       strokeWidth="0"
       viewBox="0 0 512 512"
-      className="w-6 h-6 stroke-current text-gray-700 dark:text-gray-200 hover:text-sky-500 hover:dark:text-sky-500 hover:cursor-pointer"
+      className="w-6 h-6 stroke-current text-gray-700 dark:text-gray-200 hover:text-sky-500 hover:dark:text-sky-500 hover:cursor-pointer transition-all duration-300"
       height="1em"
       width="1em"
       xmlns="http://www.w3.org/2000/svg"

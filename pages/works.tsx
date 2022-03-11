@@ -37,7 +37,7 @@ const Works: NextPage = () => {
                     <img
                       src={imageUrl}
                       alt={name}
-                      className="transform group-hover:scale-125 hover:opacity-25 transition duration-300 ease-out"
+                      className="transform group-hover:scale-125 hover:opacity-25 transition duration-500 ease-out"
                     />
                     <div className="hidden group-hover:block transition duration-300 ease-in absolute inset-x-1/4 inset-y-1/2">
                       <h3 className="text-base text-gray-600 dark:text-gray-300 text-center font-bold text-xl uppercase tracking-widest border border-1 p-1 rounded border-sky-500">

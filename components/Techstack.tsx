@@ -36,89 +36,109 @@ import {
 const TechStack = () => {
   return (
     <div className="flex flex-wrap gap-3">
-      <a className={`block px-3 bg-[#7cc5d9]`} href={REACT_URL} target="_blank">
+      <a
+        className="block px-3 bg-[#7cc5d9] transform transition duration-300 hover:scale-110"
+        href={REACT_URL}
+        target="_blank"
+      >
         <span className="text-white drop-shadow-lg">{REACT}</span>
       </a>
       <a
-        className={`block px-3 bg-[#7cc5d9]`}
+        className="block px-3 bg-[#7cc5d9] transform transition duration-300 hover:scale-110"
         href={REACT_NATIVE_URL}
         target="_blank"
       >
         <span className="text-white drop-shadow-lg">{REACT_NATIVE}</span>
       </a>
       <a
-        className={`block px-3 bg-[#d64292]`}
+        className="block px-3 bg-[#d64292] transform transition duration-300 hover:scale-110"
         href={GRAPHQL_URL}
         target="_blank"
       >
         <span className="text-white drop-shadow-lg">{GRAPHQL}</span>
       </a>
       <a
-        className={`block px-3 bg-[#444]`}
+        className="block px-3 bg-[#444] transform transition duration-300 hover:scale-110"
         href={EXPRESS_JS_URL}
         target="_blank"
       >
         <span className="text-white drop-shadow-lg">{EXPRESS_JS}</span>
       </a>
       <a
-        className={`block px-3 bg-[#696969]`}
+        className="block px-3 bg-[#696969] transform transition duration-300 hover:scale-110"
         href={NEXT_JS_URL}
         target="_blank"
       >
         <span className="text-white drop-shadow-lg">{NEXT_JS}</span>
       </a>
       <a
-        className={`block px-3 bg-[#84ba64]`}
+        className="block px-3 bg-[#84ba64] transform transition duration-300 hover:scale-110"
         href={NODE_JS_URL}
         target="_blank"
       >
         <span className="text-white drop-shadow-lg">{NODE_JS}</span>
       </a>
-      <a className={`block px-3 bg-[#c21325]`} href={JEST_URL} target="_blank">
+      <a
+        className="block px-3 bg-[#c21325] transform transition duration-300 hover:scale-110"
+        href={JEST_URL}
+        target="_blank"
+      >
         <span className="text-white drop-shadow-lg">{JEST}</span>
       </a>
       <a
-        className={`block px-3 bg-[#f5da55]`}
+        className="block px-3 bg-[#f5da55] transform transition duration-300 hover:scale-110"
         href={JAVASCRIPT_URL}
         target="_blank"
       >
         <span className="text-white drop-shadow-lg">{JAVASCRIPT}</span>
       </a>
       <a
-        className={`block px-3 bg-[#3178c6]`}
+        className="block px-3 bg-[#3178c6] transform transition duration-300 hover:scale-110"
         href={TYPESCRIPT_URL}
         target="_blank"
       >
         <span className="text-white drop-shadow-lg">{TYPESCRIPT}</span>
       </a>
-      <a className={`block px-3 bg-[#ff5733]`} href={HTML5_URL} target="_blank">
+      <a
+        className="block px-3 bg-[#ff5733] transform transition duration-300 hover:scale-110"
+        href={HTML5_URL}
+        target="_blank"
+      >
         <span className="text-white drop-shadow-lg">{HTML5}</span>
       </a>
-      <a className={`block px-3 bg-[#264de4]`} href={CSS3_URL} target="_blank">
+      <a
+        className="block px-3 bg-[#264de4] transform transition duration-300 hover:scale-110"
+        href={CSS3_URL}
+        target="_blank"
+      >
         <span className="text-white drop-shadow-lg">{CSS3}</span>
       </a>
       <a
-        className={`block px-3 bg-[#2b3a42]`}
+        className="block px-3 bg-[#2b3a42] transform transition duration-300 hover:scale-110"
         href={WEBPACK_URL}
         target="_blank"
       >
         <span className="text-white drop-shadow-lg">{WEBPACK}</span>
       </a>
       <a
-        className={`block px-3 bg-[#2496ed]`}
+        className="block px-3 bg-[#2496ed] transform transition duration-300 hover:scale-110"
         href={DOCKER_URL}
         target="_blank"
       >
         <span className="text-white drop-shadow-lg">{DOCKER}</span>
       </a>
       <a
-        className={`block px-3 bg-[#3371e3]`}
+        className="block px-3 bg-[#3371e3] transform transition duration-300 hover:scale-110"
         href={KUBERNETES_URL}
         target="_blank"
       >
         <span className="text-white drop-shadow-lg">{KUBERNETES}</span>
       </a>
-      <a className={`block px-3 bg-[#f5da55]`} href={BABEL_URL} target="_blank">
+      <a
+        className="block px-3 bg-[#f5da55] transform transition duration-300 hover:scale-110"
+        href={BABEL_URL}
+        target="_blank"
+      >
         <span className="text-white drop-shadow-lg">{BABEL}</span>
       </a>
     </div>

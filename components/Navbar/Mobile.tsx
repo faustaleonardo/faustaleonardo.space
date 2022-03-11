@@ -9,7 +9,7 @@ const NavbarMobile = () => {
         {MENUS.map(({ name, path }) => (
           <li key={name}>
             <Link href={path}>
-              <a className="block my-5 font-bold text-center text-2xl text-gray-900 dark:text-white tracking-normal hover:tracking-widest hover:text-sky-500 dark:hover:text-sky-500 transition-all">
+              <a className="block my-5 font-bold text-center text-2xl text-gray-900 dark:text-white tracking-normal hover:tracking-widest hover:text-sky-500 dark:hover:text-sky-500 transition-all duration-300">
                 {name.toUpperCase()}
               </a>
             </Link>

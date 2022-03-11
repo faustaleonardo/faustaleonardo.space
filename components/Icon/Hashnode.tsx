@@ -6,7 +6,7 @@ const HashNodeIcon = () => {
       strokeWidth="0"
       role="img"
       viewBox="0 0 24 24"
-      className="w-6 h-6 stroke-current text-gray-700 dark:text-gray-200 hover:text-sky-500 dark:hover:text-sky-500 hover:cursor-pointer"
+      className="w-6 h-6 stroke-current text-gray-700 dark:text-gray-200 hover:text-sky-500 dark:hover:text-sky-500 hover:cursor-pointer transition-all duration-300"
       height="1em"
       width="1em"
       xmlns="http://www.w3.org/2000/svg"
