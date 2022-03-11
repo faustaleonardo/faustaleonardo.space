@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 import Image from 'next/image';
@@ -32,6 +33,7 @@ const Works: NextPage = () => {
                   href={link}
                   key={name}
                   className="w-full block shadow-[0_3px_10px_rgb(0,0,0,0.2)]"
+                  target="_blank"
                 >
                   <div className="relative overflow-hidden group">
                     <img
