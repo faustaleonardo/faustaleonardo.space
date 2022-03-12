@@ -1,12 +1,6 @@
 import { useTheme } from 'next-themes';
 import { useRef } from 'react';
-import {
-  CLICK_SOUND_PATH,
-  DARK,
-  JUSTIFY_END,
-  JUSTIFY_START,
-  LIGHT,
-} from '../../lib/constants';
+import { CLICK_SOUND_PATH, DARK, LIGHT } from '../../lib/constants';
 import MoonIcon from '../Icon/Moon';
 import SunIcon from '../Icon/Sun';
 
