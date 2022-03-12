@@ -56,7 +56,7 @@ export const MENUS: Array<MENUS_TYPE> = [
 
 export const SITE_METADATA: SITE_META_TYPE = {
   title: 'Fausta | Mobile & Web Engineer',
-  url: 'https://faustaleonardo.com',
+  url: 'https://faustaleonardo.space',
   description:
     'Forward-thinking and progress-driven software engineer with background working productively in dynamic environments. Dedicated to achieving development objectives according to tight schedules while producing impeccable code.',
   author: 'Fausta Leonardo',
