@@ -6,10 +6,16 @@ const Timeline = () => {
   return (
     <section className="flex flex-col justify-center items-center bg-gray-100 dark:bg-gray-900 pt-20 pb-40">
       <Container>
-        <h1 className="text-3xl lg:text-5xl pb-20">Where I&apos;ve worked</h1>
+        <h1 data-aos="fade-up" className="text-3xl lg:text-5xl pb-20">
+          Where I&apos;ve worked
+        </h1>
         {TIMELINE.map((item, index) => (
-          <>
-            <div key={item.company}>
+          <div
+            data-aos="fade-up"
+            data-aos-delay={(index + 1) * 100}
+            key={item.company}
+          >
+            <div>
               <h3 className="text-xl">
                 <span>{item.position} </span>
                 <a
@@ -40,7 +46,7 @@ const Timeline = () => {
             {index !== TIMELINE.length - 1 ? (
               <div className="border border-y-1 my-10"></div>
             ) : null}
-          </>
+          </div>
         ))}
       </Container>
     </section>
