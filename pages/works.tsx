@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 import Container from '../components/Container';
 import Layout from '../components/Layout';
 import MobileMenu from '../components/MobileMenu';
-import WorkList from '../components/Work/List';
+import WorkList from '../components/work/List';
 import useIsMobileMenuOpened from '../hooks/useIsMobileMenuOpened';
 import useIsMounted from '../hooks/useIsMounted';
 

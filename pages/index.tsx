@@ -4,7 +4,7 @@ import useIsMounted from '../hooks/useIsMounted';
 import Hero from '../components/Hero';
 import useIsMobileMenuOpened from '../hooks/useIsMobileMenuOpened';
 import MobileMenu from '../components/MobileMenu';
-import Timeline from '../components/Timeline';
+import Timeline from '../components/timeline';
 import Container from '../components/Container';
 
 const Home: NextPage = () => {
