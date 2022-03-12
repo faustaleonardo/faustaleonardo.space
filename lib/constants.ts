@@ -41,6 +41,7 @@ export const KUBERNETES_URL = 'https://kubernetes.io/';
 export const BABEL = 'Babel';
 export const BABEL_URL = 'https://babeljs.io/';
 
+export const CLICK_SOUND_PATH = '/click-sound.wav';
 export const SAYURBOX_URL = 'https://www.sayurbox.com';
 // TODO:
 export const TECH_STACK_BASE_URL = 'https://img.shields.io';
