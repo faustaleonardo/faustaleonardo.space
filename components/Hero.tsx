@@ -15,7 +15,7 @@ const Hero = () => {
             I build things for mobile and web
           </h1>
           <p className="text-base text-gray-500 dark:text-gray-400 pb-4">
-            I&apos; m a software engineer specializing in mobile and web app.
+            I&apos;m a software engineer specializing in mobile and web app.
             Currently, I&apos;m working as a SDE Frontend{' '}
             <a
               href={SAYURBOX_URL}

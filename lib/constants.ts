@@ -56,7 +56,7 @@ export const SITE_METADATA: SITE_META_TYPE = {
   title: 'Fausta | Mobile & Web Engineer',
   url: 'https://faustaleonardo.space',
   description:
-    'Forward-thinking and progress-driven software engineer with background working productively in dynamic environments. Dedicated to achieving development objectives according to tight schedules while producing impeccable code.',
+    "I'm a software engineer specializing in mobile and web app. Currently, I'm working as a SDE Frontend @Sayurbox",
   author: 'Fausta Leonardo',
   type: 'article',
   imageUrl: 'https://faustaleonardo.space/meta/meta.png',
