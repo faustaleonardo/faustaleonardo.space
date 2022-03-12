@@ -5,8 +5,6 @@ import type {
   THUMBNAILS_TYPE,
 } from './types';
 
-export const JUSTIFY_END = 'justify-end';
-export const JUSTIFY_START = 'justify-start';
 export const DARK = 'dark';
 export const LIGHT = 'light';
 export const REACT = 'React';

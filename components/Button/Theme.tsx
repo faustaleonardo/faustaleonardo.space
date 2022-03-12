@@ -15,7 +15,7 @@ const ThemeButton = () => {
   const audioRef = useRef(new Audio(CLICK_SOUND_PATH));
 
   const isLight = theme === LIGHT;
-  const themePosition = isLight ? JUSTIFY_END : JUSTIFY_START;
+  const themePosition = isLight ? 'justify-end' : 'justify-start';
   const handleToggleTheme = () => {
     audioRef.current.play();
     const nextTheme = theme === LIGHT ? DARK : LIGHT;
