@@ -4,6 +4,18 @@ import { SITE_METADATA } from '../lib/constants';
 export default function Meta() {
   return (
     <Head>
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/favicon/favicon-16x16.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/favicon/favicon-32x32.png"
+      />
       <title>{SITE_METADATA.title}</title>
       <meta name="robots" content="follow, index" />
       <meta

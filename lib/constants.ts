@@ -55,8 +55,8 @@ export const MENUS: Array<MENUS_TYPE> = [
 ];
 
 export const SITE_METADATA: SITE_META_TYPE = {
-  title: 'faustaleonardo.space',
-  url: 'https://faustaleonardo.space',
+  title: 'Fausta | Mobile & Web Engineer',
+  url: 'https://faustaleonardo.com',
   description:
     'Forward-thinking and progress-driven software engineer with background working productively in dynamic environments. Dedicated to achieving development objectives according to tight schedules while producing impeccable code.',
   author: 'Fausta Leonardo',
@@ -128,32 +128,32 @@ export const TIMELINE: CAREER_TYPE[] = [
 
 export const THUMBNAILS: THUMBNAILS_TYPE[] = [
   {
-    name: 'sayurfluencer - referral program',
+    name: 'sayurfluencer',
     link: '#',
     imageUrl: '/thumbnails/sayurfluencer.png',
   },
   {
-    name: 'solvin - education app',
+    name: 'solvin',
     link: 'https://faustaleonardo.bitbucket.io/frontend-solvin/',
     imageUrl: '/thumbnails/solvin.png',
   },
   {
-    name: 'solivis - restaurant reservation app',
+    name: 'solivis',
     link: '#',
     imageUrl: '/thumbnails/solivis.png',
   },
   {
-    name: 'medanstore - ecommerce app',
+    name: 'medanstore',
     link: 'https://github.com/faustaleonardo/medanstore-microservices/',
     imageUrl: '/thumbnails/medanstore.png',
   },
   {
-    name: 'medanhost - accommodation app',
+    name: 'medanhost',
     link: 'https://github.com/faustaleonardo/medanhost/',
     imageUrl: '/thumbnails/medanhost.png',
   },
   {
-    name: 'forumzone - forum api',
+    name: 'forumzone',
     link: 'https://documenter.getpostman.com/view/361363/SzKWtx8U?version=latest/',
     imageUrl: '/thumbnails/forumzone.png',
   },
