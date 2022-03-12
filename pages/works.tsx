@@ -32,7 +32,7 @@ const Works: NextPage = () => {
                 <div
                   key={name}
                   data-aos="zoom-in"
-                  data-aos-delay={1000 + index * 200}
+                  data-aos-delay={50 + index * 100}
                 >
                   <a
                     href={link}
