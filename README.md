@@ -1,5 +1,3 @@
-# faustaleonardo.space
-
 ## ⚡️ Live
 
 [faustaleonardo.space](https://faustaleonardo.space/)
