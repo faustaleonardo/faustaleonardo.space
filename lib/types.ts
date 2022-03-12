@@ -13,14 +13,6 @@ export type MENUS_TYPE = {
   path: string;
 };
 
-export type SOCIAL_MEDIA_TYPE = {
-  linkedin: string;
-  twitter: string;
-  github: string;
-  hashNode: string;
-  email: string;
-};
-
 export type CAREER_TYPE = {
   position: string;
   company: string;

@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import { SAYURBOX_URL } from '../lib/constants';
-import TechStack from './Techstack';
+import TechStack from './TechStack';
 
 const Hero = () => {
   return (

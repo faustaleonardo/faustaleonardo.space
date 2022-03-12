@@ -8,6 +8,14 @@ import HashNodeIcon from './Icon/Hashnode';
 import LinkedinIcon from './Icon/Linkedin';
 import TwitterIcon from './Icon/Twitter';
 
+const socialMediaSwitchIcon: Record<string, JSX.Element> = {
+  linkedin: <LinkedinIcon />,
+  twitter: <TwitterIcon />,
+  github: <GithubIcon />,
+  hashNode: <HashNodeIcon />,
+  email: <EmailIcon />,
+};
+
 const Footer = () => {
   return (
     <footer className="lg:flex lg:justify-between lg:items-start lg:my-12">
@@ -30,31 +38,13 @@ const Footer = () => {
           Get in touch
         </h2>
         <ul className="flex gap-7 py-6">
-          <li>
-            <a href={SOCIAL_MEDIA_LINK.linkedin} target="_blank">
-              <LinkedinIcon />
-            </a>
-          </li>
-          <li>
-            <a href={SOCIAL_MEDIA_LINK.twitter} target="_blank">
-              <TwitterIcon />
-            </a>
-          </li>
-          <li className="flex gap-4">
-            <a href={SOCIAL_MEDIA_LINK.github} target="_blank">
-              <GithubIcon />
-            </a>
-          </li>
-          <li className="flex gap-4">
-            <a href={SOCIAL_MEDIA_LINK.hashNode} target="_blank">
-              <HashNodeIcon />
-            </a>
-          </li>
-          <li className="flex gap-4">
-            <a href={SOCIAL_MEDIA_LINK.email} target="_blank">
-              <EmailIcon />
-            </a>
-          </li>
+          {Object.keys(SOCIAL_MEDIA_LINK).map((key) => (
+            <li key={key}>
+              <a href={SOCIAL_MEDIA_LINK[key]} target="_blank">
+                {socialMediaSwitchIcon[key]}
+              </a>
+            </li>
+          ))}
         </ul>
       </section>
     </footer>

@@ -1,14 +1,14 @@
-import {
+import type {
   CAREER_TYPE,
   MENUS_TYPE,
   SITE_META_TYPE,
-  SOCIAL_MEDIA_TYPE,
   THUMBNAILS_TYPE,
 } from './types';
 
+export const JUSTIFY_END = 'justify-end';
+export const JUSTIFY_START = 'justify-start';
 export const DARK = 'dark';
 export const LIGHT = 'light';
-
 export const REACT = 'React';
 export const REACT_URL = 'https://reactjs.org/';
 export const REACT_NATIVE = 'React Native';
@@ -40,11 +40,8 @@ export const KUBERNETES = 'Kubernetes';
 export const KUBERNETES_URL = 'https://kubernetes.io/';
 export const BABEL = 'Babel';
 export const BABEL_URL = 'https://babeljs.io/';
-
 export const CLICK_SOUND_PATH = '/click-sound.wav';
 export const SAYURBOX_URL = 'https://www.sayurbox.com';
-// TODO:
-export const TECH_STACK_BASE_URL = 'https://img.shields.io';
 
 export const MENUS: Array<MENUS_TYPE> = [
   {
@@ -68,7 +65,7 @@ export const SITE_METADATA: SITE_META_TYPE = {
   twitterUsername: '@faustaleonardo',
 };
 
-export const SOCIAL_MEDIA_LINK: SOCIAL_MEDIA_TYPE = {
+export const SOCIAL_MEDIA_LINK: Record<string, string> = {
   linkedin: 'https://www.linkedin.com/in/faustaleonardo/',
   twitter: 'https://twitter.com/faustaleonardo',
   github: 'https://github.com/faustaleonardo',
