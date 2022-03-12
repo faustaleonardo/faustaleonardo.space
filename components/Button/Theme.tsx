@@ -1,17 +1,23 @@
 import { useTheme } from 'next-themes';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { CLICK_SOUND_PATH, DARK, LIGHT } from '../../lib/constants';
 import MoonIcon from '../Icon/Moon';
 import SunIcon from '../Icon/Sun';
 
 const ThemeButton = () => {
   const { theme, setTheme } = useTheme();
-  const audioRef = useRef(new Audio(CLICK_SOUND_PATH));
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    audioRef.current = new Audio(CLICK_SOUND_PATH);
+  }, []);
 
   const isLight = theme === LIGHT;
   const themePosition = isLight ? 'justify-end' : 'justify-start';
   const handleToggleTheme = () => {
-    audioRef.current.play();
+    if (audioRef.current) {
+      audioRef.current.play();
+    }
     const nextTheme = theme === LIGHT ? DARK : LIGHT;
     setTheme(nextTheme);
   };
