@@ -5,6 +5,8 @@ export type SITE_META_TYPE = {
   author: string;
   type: string;
   imageUrl: string;
+  imageWidth: string;
+  imageHeight: string;
   twitterUsername: string;
 };
 

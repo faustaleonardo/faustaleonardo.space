@@ -60,6 +60,8 @@ export const SITE_METADATA: SITE_META_TYPE = {
   author: 'Fausta Leonardo',
   type: 'article',
   imageUrl: 'https://faustaleonardo.space/meta/meta.png',
+  imageWidth: '2122',
+  imageHeight: '776',
   twitterUsername: '@faustaleonardo',
 };
 
