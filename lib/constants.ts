@@ -39,7 +39,7 @@ export const KUBERNETES_URL = 'https://kubernetes.io/';
 export const BABEL = 'Babel';
 export const BABEL_URL = 'https://babeljs.io/';
 export const CLICK_SOUND_PATH = '/click-sound.wav';
-export const SAYURBOX_URL = 'https://www.sayurbox.com';
+export const TRAVELOKA_URL = 'https://www.traveloka.com';
 
 export const MENUS: Array<MENUS_TYPE> = [
   {
@@ -56,7 +56,7 @@ export const SITE_METADATA: SITE_META_TYPE = {
   title: 'Fausta | Mobile & Web Engineer',
   url: 'https://faustaleonardo.space',
   description:
-    "I'm a software engineer specializing in mobile and web app. Currently, I'm working as a SDE Frontend @Sayurbox",
+    "I'm a software engineer specializing in mobile and web app. Currently, I'm working as a Software Engineer 2 @Traveloka",
   author: 'Fausta Leonardo',
   type: 'article',
   imageUrl: 'https://faustaleonardo.space/meta/meta.png',
@@ -75,12 +75,26 @@ export const SOCIAL_MEDIA_LINK: Record<string, string> = {
 
 export const TIMELINE: CAREER_TYPE[] = [
   {
+    position: 'Software Engineer II',
+    company: 'Traveloka',
+    companyUrl: TRAVELOKA_URL,
+    period: 'Mar 2022 - Present',
+    description: [
+      'Integrated Eats Driver app with crash reporting and error monitoring tools.',
+      'Increased crash-free statistics in app to more than 98%.',
+      'Developed Front-end tracking utilities to support product decisions.',
+      'Wrote clean and clear code for various projects, such as in-app updates, waiting for food journey, tray and map improvements.',
+      'Updated old code bases to modern development standards and improved functionality.',
+    ],
+    techStacks: 'React, React Native, Javascript, Typescript, Kotlin',
+  },
+  {
     position: 'SDE Frontend',
     company: 'Sayurbox',
-    companyUrl: SAYURBOX_URL,
+    companyUrl: 'https://www.sayurbox.com',
     period: 'Jul 2021 - Mar 2022',
     description: [
-      'Developed, monitored and provided stabilization support for referral (sayurfluencer) and affiliate program (sayurfluencer plus). Key result: acquiring 1K new customers on first month release, with growth 20%.',
+      'Developed, monitored and provided stabilization support for referral (Sayurfluencer) and affiliate program (Sayurfluencer Plus). Key result: acquiring 1K new customers on first month release, with growth 20%.',
       'One of the main contributors in refactoring team. Refactored features, such as: category page, search page, referral, affiliate, loyalty points, PDP, event tracking and optimized list rendering.',
       'Reviewed code to validate structures, and verify browser, device and operating system compatibility.',
       'Worked in Agile-driven environment to effectively maintain project timelines and utilize available resources.',
@@ -101,14 +115,6 @@ export const TIMELINE: CAREER_TYPE[] = [
       'Improved and maintained codebase quality.',
       'Analysed system specifications and translated system requirements to task specifications.',
     ],
-    techStacks: 'React, Javascript, Go, PostgreSQL',
-  },
-  {
-    position: 'Work and Holiday Maker',
-    company: 'Australia',
-    companyUrl: 'https://www.australia.com/',
-    period: 'Dec 2017 - Jan 2020',
-    description: ['Studied, lived and worked in Australia'],
     techStacks: 'React, Javascript, Go, PostgreSQL',
   },
   {
