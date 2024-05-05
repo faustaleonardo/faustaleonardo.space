@@ -8,6 +8,7 @@ import type {
 export const DARK = 'dark';
 export const LIGHT = 'light';
 export const REACT = 'React';
+export const PLAYWRIGHT = 'Playwright';
 export const REACT_URL = 'https://reactjs.org/';
 export const REACT_NATIVE = 'React Native';
 export const REACT_NATIVE_URL = 'https://reactnative.dev/';
@@ -38,8 +39,9 @@ export const KUBERNETES = 'Kubernetes';
 export const KUBERNETES_URL = 'https://kubernetes.io/';
 export const BABEL = 'Babel';
 export const BABEL_URL = 'https://babeljs.io/';
+export const PLAYWRIGHT_URL = 'https://playwright.dev/';
 export const CLICK_SOUND_PATH = '/click-sound.wav';
-export const TRAVELOKA_URL = 'https://www.traveloka.com';
+export const AGODA_URL = 'https://www.agoda.com';
 
 export const MENUS: Array<MENUS_TYPE> = [
   {
@@ -54,12 +56,12 @@ export const MENUS: Array<MENUS_TYPE> = [
 
 export const SITE_METADATA: SITE_META_TYPE = {
   title: 'Fausta | Mobile & Web Engineer',
-  url: 'https://faustaleonardo.space',
+  url: 'https://faustaleonardo.com',
   description:
-    "I'm a software engineer specializing in mobile and web app. Currently, I'm working as a Software Engineer 2 @Traveloka",
+    "I'm a software engineer specializing in mobile and web app. Currently, I'm working as a Senior Software Engineer @Agoda",
   author: 'Fausta Leonardo',
   type: 'article',
-  imageUrl: 'https://faustaleonardo.space/meta/meta.png',
+  imageUrl: 'https://faustaleonardo.com/meta/meta.png',
   imageWidth: '2122',
   imageHeight: '776',
   twitterUsername: '@faustaleonardo',
@@ -75,10 +77,39 @@ export const SOCIAL_MEDIA_LINK: Record<string, string> = {
 
 export const TIMELINE: CAREER_TYPE[] = [
   {
-    position: 'Software Engineer II',
+    position: 'Senior Software Engineer',
+    company: 'Agoda',
+    companyUrl: AGODA_URL,
+    period: '',
+    description: [
+      'Resolved multiple UI issues in payment form, resulting in a significant increase of 123 Incremental Bookings Per Day (IBPD).',
+      'Carried a key role in the design and implementation of unified payment form, enabling seamless integration of all payment methods across various Agoda products.',
+      'Set up a Continuous Integration (CI) pipeline, ensuring robust test coverage and reliable end-to-end testing for payment form.',
+      'Drove a user experience (UX) enhancement initiative for payment form.',
+    ],
+    techStacks:
+      'React, React Testing Library, Playwright, Javascript, Typescript',
+  },
+  {
+    position: 'Software Engineer II, Web Infrastructure',
     company: 'Traveloka',
-    companyUrl: TRAVELOKA_URL,
-    period: 'Mar 2022 - Present',
+    companyUrl: 'https://www.traveloka.com',
+    period: 'Oct 2022 - Aug 2023',
+    description: [
+      'Migrated monorepo that contains more than 250 micro packages from yarn workspace to pnpm. Reduced time needed to install packages from 8.5 minutes to 1.5 minutes.',
+      'Saved bundle size of hotel detail page by around 67KB and improved its LCP (Largest Contentful Paint) score by 13 seconds. Increased overall performance page score from 55 to 82.',
+      'Migrated product components out of web-components mono package. Resulted in saving CI/CD build time by more than 10 minutes.',
+      'Ensured monitoring, dashboard, alerting, and SLO of frontend services function as expected and encouraged product web engineers to follow incident response SOP.',
+      'Assisted product web engineers with any problems they would encounter while using our framework.',
+    ],
+    techStacks:
+      'React, Next.js, Javascript, Typescript, Go, Terraform, Datadog, Docker, AWS (ECS, X-Ray, CloudWatch, Amplify, Lambda)',
+  },
+  {
+    position: 'Software Engineer II, Mobile & Web',
+    company: 'Traveloka',
+    companyUrl: 'https://www.traveloka.com',
+    period: 'Mar 2022 - Oct 2022',
     description: [
       'Integrated Eats Driver app with crash reporting and error monitoring tools.',
       'Increased crash-free statistics in app to more than 98%.',

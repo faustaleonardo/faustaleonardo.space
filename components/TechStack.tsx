@@ -23,6 +23,8 @@ import {
   NEXT_JS_URL,
   NODE_JS,
   NODE_JS_URL,
+  PLAYWRIGHT,
+  PLAYWRIGHT_URL,
   REACT,
   REACT_NATIVE,
   REACT_NATIVE_URL,
@@ -36,6 +38,15 @@ import {
 const TechStack = () => {
   return (
     <div className="flex flex-wrap gap-3">
+      <div data-aos="zoom-in" data-aos-delay={500}>
+        <a
+          className="block px-3 bg-[#d64292] transform transition duration-300 hover:scale-110"
+          href={PLAYWRIGHT_URL}
+          target="_blank"
+        >
+          <span className="text-white drop-shadow-lg">{PLAYWRIGHT}</span>
+        </a>
+      </div>
       <div data-aos="zoom-in" data-aos-delay={600}>
         <a
           className="block px-3 bg-[#7cc5d9] transform transition duration-300 hover:scale-110"

@@ -1,6 +1,6 @@
 ## ⚡️ Live
 
-[faustaleonardo.space](https://faustaleonardo.space/)
+[faustaleonardo.com](https://faustaleonardo.com/)
 
 ## 🛠 Tech Stacks
 

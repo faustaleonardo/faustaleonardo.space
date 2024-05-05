@@ -1,5 +1,5 @@
 /* eslint-disable react/jsx-no-target-blank */
-import { TRAVELOKA_URL } from '../lib/constants';
+import { AGODA_URL } from '../lib/constants';
 import TechStack from './TechStack';
 
 const Hero = () => {
@@ -16,13 +16,13 @@ const Hero = () => {
           </h1>
           <p className="text-base text-gray-500 dark:text-gray-400 pb-4">
             I&apos;m a software engineer specializing in mobile and web app.
-            Currently, I&apos;m working as a Software Engineer II{' '}
+            Currently, I&apos;m working as a Senior Software Engineer{' '}
             <a
-              href={TRAVELOKA_URL}
+              href={AGODA_URL}
               target="_blank"
               className="text-base custom-link"
             >
-              @Traveloka
+              @Agoda
             </a>
           </p>
           <p className="text-base text-gray-500 dark:text-gray-400 pb-3">
