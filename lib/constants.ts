@@ -58,7 +58,7 @@ export const SITE_METADATA: SITE_META_TYPE = {
   title: 'Fausta | Mobile & Web Engineer',
   url: 'https://faustaleonardo.com',
   description:
-    "I'm a software engineer specializing in mobile and web app. Currently, I'm working as a Senior Software Engineer @Agoda",
+    "I'm a software engineer specializing in mobile and web app. Currently, I'm working as a Staff Software Engineer @Agoda",
   author: 'Fausta Leonardo',
   type: 'article',
   imageUrl: 'https://faustaleonardo.com/meta/meta.png',
@@ -77,18 +77,34 @@ export const SOCIAL_MEDIA_LINK: Record<string, string> = {
 
 export const TIMELINE: CAREER_TYPE[] = [
   {
+    position: 'Staff Software Engineer',
+    company: 'Agoda',
+    companyUrl: AGODA_URL,
+    period: '',
+    description: [
+      'Led the design and delivery of a mission-critical Payment SDK, enabling seamless payment integration and cross-team collaboration; delivered on time with strong stakeholder feedback.',
+      'Boosted build and development efficiency by modernizing tooling and optimizing workflows, achieving up to 9x faster compile and 17.5x faster build times.',
+      'Provided technical leadership and mentorship, supporting multiple teams and onboarding new engineers with clear documentation and hands-on guidance.',
+      'Refactored and modularized legacy payment code, introducing scalable architecture and enabling direct development and testing of payment features—reducing setup and iteration time from hours to minutes.',
+      'Drove process improvements and a culture of ownership, streamlining critical procedures and optimizing alerting for faster, more reliable operations.',
+    ],
+    techStacks:
+      'React, Redux, React Testing Library, Jest, Playwright, Rspack, Webpack, Javascript, Typescript.',
+  },
+  {
     position: 'Senior Software Engineer',
     company: 'Agoda',
     companyUrl: AGODA_URL,
     period: '',
     description: [
+      'Carried a key role in the design and implementation of unified payment form, significantly reducing onboarding time for new payment methods from 10 SPs to 1 SP.',
       'Resolved multiple UI issues in payment form, resulting in a significant increase of 123 Incremental Bookings Per Day (IBPD).',
-      'Carried a key role in the design and implementation of unified payment form, enabling seamless integration of all payment methods across various Agoda products.',
+      'Led end-end-to-end design and implementation of a robust Payment SDK, delivering optimized solutions for seamless payment processing.',
+      'Revamped QR payment flow, streamlining processes to improve usability, reliability, and transaction speed.',
       'Set up a Continuous Integration (CI) pipeline, ensuring robust test coverage and reliable end-to-end testing for payment form.',
-      'Drove a user experience (UX) enhancement initiative for payment form.',
     ],
     techStacks:
-      'React, React Testing Library, Playwright, Javascript, Typescript',
+      'React, Redux, React Testing Library, Jest, Playwright, Rspack, Webpack, Javascript, Typescript.',
   },
   {
     position: 'Software Engineer II, Web Infrastructure',
