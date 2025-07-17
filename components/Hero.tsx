@@ -16,7 +16,7 @@ const Hero = () => {
           </h1>
           <p className="text-base text-gray-500 dark:text-gray-400 pb-4">
             I&apos;m a software engineer specializing in mobile and web app.
-            Currently, I&apos;m working as a Senior Software Engineer{' '}
+            Currently, I&apos;m working as a Staff Software Engineer{' '}
             <a
               href={AGODA_URL}
               target="_blank"
